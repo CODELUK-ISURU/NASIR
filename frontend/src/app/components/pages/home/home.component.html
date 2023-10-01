@@ -1,0 +1,13 @@
+<ul>
+    <li *ngFor="let food of foods">
+        <a [routerLink]="['/{{food.id}}']" routerLinkActive="router-link-active" >
+            <img src="{{food.imageUrl}}" width="300px" alt="{{food.name}}`s image">
+            <div class="contains">
+                <span class="name">{{food.name}}</span>
+                <span *ngIf=food.favorite>❤</span>
+                <p class="price">{{food.price}}</p>
+                <span class="orgin" *ngFor="let org of food.orgin">{{org}}</span>
+            </div>
+        </a>
+    </li>
+</ul>

@@ -1,0 +1,15 @@
+ul li{
+    background-color: #2E4374;
+    float: left;
+    padding: 2%;
+    margin: 1%;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+ul li a .contains p,span{
+    text-decoration: none;
+    color: white;
+}
